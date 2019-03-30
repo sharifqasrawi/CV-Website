@@ -1,0 +1,80 @@
+﻿@model My_Personal_Website.Models.CVLangModel
+@using My_Personal_Website.Resources
+@{
+    ViewBag.Title = Resource.AddLang;
+}
+
+<h2>
+    <span class="glyphicon glyphicon-plus-sign"></span>
+    @Resource.AddLang</h2>
+<hr />
+@using (Html.BeginForm("AddLang", "Admin", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div >
+
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Language, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Language, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.Language)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Language, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Language_Fr, new { @class = "form-control", placeholder = Resource.French })
+                @Html.ValidationMessageFor(model => model.Language_Fr)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SpeakingLevel, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.SpeakingLevel, new { @class = "form-control", placeholder = Resource.Digit })
+                @Html.ValidationMessageFor(model => model.SpeakingLevel)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ListeningLevel, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.ListeningLevel, new { @class = "form-control", placeholder = Resource.Digit })
+                @Html.ValidationMessageFor(model => model.ListeningLevel)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ReadingLevel, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.ReadingLevel, new { @class = "form-control", placeholder = Resource.Digit })
+                @Html.ValidationMessageFor(model => model.ReadingLevel)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.WritingLevel, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.WritingLevel, new { @class = "form-control", placeholder = Resource.Digit })
+                @Html.ValidationMessageFor(model => model.WritingLevel)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-success">
+                    <span class="glyphicon glyphicon-saved"></span>
+                    @Resource.Add
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink(Resource.BackToList, "Languages")
+</div>

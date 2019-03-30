@@ -1,0 +1,169 @@
+﻿
+@model My_Personal_Website.Models.HomeModel
+@using My_Personal_Website.Models
+@using My_Personal_Website.Resources
+@using My_Personal_Website.WebsiteLanguages
+@{
+    int eduCnt = 0;
+    int profCnt = 0;
+    int refCnt = 0;
+    int langCnt = 0;
+    int crsCnt = 0;
+    int sklCnt = 0;
+    string spkColor = "", lstColor = "", rdColor = "", wrColor = "", lblColor = "";
+    string clsName = "";
+    List<string> panels = new List<string>();
+    panels.Add("panel-primary");
+    panels.Add("panel-info");
+    panels.Add("panel-default");
+    panels.Add("panel-warning");
+    panels.Add("panel-danger");
+
+}
+
+<div class="ContentStyle">
+    @foreach (CVLangModel e in Model.Languages)
+    {
+
+        langCnt++;
+        if (e.SpeakingLevel >= 80)
+        {
+            spkColor = "progress-bar-success";
+        }
+        else if (e.SpeakingLevel >= 50 && e.SpeakingLevel < 80)
+        {
+            spkColor = "progress-bar-info";
+        }
+        else if (e.SpeakingLevel >= 20 && e.SpeakingLevel < 50)
+        {
+            spkColor = "progress-bar-warning";
+        }
+        else if (e.SpeakingLevel >= 0 && e.SpeakingLevel < 20)
+        {
+            spkColor = "progress-bar-danger";
+        }
+
+        if (e.ListeningLevel >= 80)
+        {
+            lstColor = "progress-bar-success";
+        }
+        else if (e.ListeningLevel >= 50 && e.ListeningLevel < 80)
+        {
+            lstColor = "progress-bar-info";
+        }
+        else if (e.ListeningLevel >= 20 && e.ListeningLevel < 50)
+        {
+            lstColor = "progress-bar-warning";
+        }
+        else if (e.ListeningLevel >= 0 && e.ListeningLevel < 20)
+        {
+            lstColor = "progress-bar-danger";
+        }
+
+        if (e.ReadingLevel >= 80)
+        {
+            rdColor = "progress-bar-success";
+        }
+        else if (e.ReadingLevel >= 50 && e.ReadingLevel < 80)
+        {
+            rdColor = "progress-bar-info";
+        }
+        else if (e.ReadingLevel >= 20 && e.ReadingLevel < 50)
+        {
+            rdColor = "progress-bar-warning";
+        }
+        else if (e.ReadingLevel >= 0 && e.ReadingLevel < 20)
+        {
+            rdColor = "progress-bar-danger";
+        }
+
+        if (e.WritingLevel >= 80)
+        {
+            wrColor = "progress-bar-success";
+        }
+        else if (e.WritingLevel >= 50 && e.WritingLevel < 80)
+        {
+            wrColor = "progress-bar-info";
+        }
+        else if (e.WritingLevel >= 20 && e.WritingLevel < 50)
+        {
+            wrColor = "progress-bar-warning";
+        }
+        else if (e.WritingLevel >= 0 && e.WritingLevel < 20)
+        {
+            wrColor = "progress-bar-danger";
+        }
+
+
+        <div class="panel @panels[langCnt - 1].ToString()">
+            <div class="panel-heading" style="font-weight:bold;">
+                @langCnt- 
+                @switch(SiteLanguages.GetCurrentLanguageCulture())
+                {
+                    case "en-US":
+                        @:@e.Language
+                        break;
+                    case "fr-FR":
+                     @:@e.Language_Fr
+                        break;
+                    default:
+                     @:@e.Language
+                        break;
+                }
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5>
+                            @Resource.Speaking
+                        </h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active @spkColor" role="progressbar" aria-valuenow="@e.SpeakingLevel"
+                                 aria-valuemin="0" aria-valuemax="100" style="width:@e.SpeakingLevel%">
+                                @e.SpeakingLevel %
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <h5>
+                            @Resource.Listening
+                        </h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active @lstColor" role="progressbar" aria-valuenow="@e.ListeningLevel"
+                                 aria-valuemin="0" aria-valuemax="100" style="width:@e.ListeningLevel%">
+                                @e.ListeningLevel %
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>
+                            @Resource.Reading
+                        </h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active @rdColor" role="progressbar" aria-valuenow="@e.ReadingLevel"
+                                 aria-valuemin="0" aria-valuemax="100" style="width:@e.ReadingLevel%">
+                                @e.ReadingLevel %
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>
+                            @Resource.Writing
+                        </h5>
+                        <div class="progress">
+                            <div class="progress-bar @wrColor progress-bar-striped active" role="progressbar" aria-valuenow="@e.WritingLevel"
+                                 aria-valuemin="0" aria-valuemax="100" style="width:@e.WritingLevel%">
+                                @e.WritingLevel %
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    }
+</div>
+
+

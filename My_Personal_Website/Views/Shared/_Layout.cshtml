@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Sharif Qasrawi</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    
+    <link href="~/Content/bs.modal.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
+    <link href="~/Content/PreLoader.css" rel="stylesheet" />
+    <link href="~/Content/toastr.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link rel="icon" href="~/favicon.ico" />
+
+</head>
+<body>
+    @using Microsoft.AspNet.Identity
+    @using My_Personal_Website.Resources
+    @*<audio loop="loop" autoplay="autoplay">
+            <source src="~/Uploads/OMMU.mp3" type="audio/mpeg" />
+        </audio>*@
+    
+    @*<div class="loader-wrapper"><div class="loader spunner"></div></div>*@
+    <div class="container body-content">
+        <nav id="site-nav" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="@Url.Action("Index","Home")" class="navbar-brand">
+                    <i class="fas fa-book-reader"></i>
+                    Sharif Qasrawi
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span class="glyphicon glyphicon-globe"></span>
+                            @My_Personal_Website.WebsiteLanguages.SiteLanguages.GetCurrentLanguageName()
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            @foreach (var l in My_Personal_Website.WebsiteLanguages.SiteLanguages.AvailableLanguages)
+                            {
+                                <li>
+                                  
+                                    <a href="@Url.Action("ChangeLanguage", "Home", new { lang = l.LanguageAbbr })">
+                                        <span class="glyphicon glyphicon-forward"></span>
+                                        @l.LanguageName
+                                    </a>
+                                    
+                                </li>
+                            }
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index", "Home")">
+                            <span class="glyphicon glyphicon-home"></span>
+                            @Resource.Home
+                        </a>
+                    </li>
+
+
+
+                    <li>
+                        <a href="@Url.Action("Contact", "Home")">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            @Resource.ContactMe
+                        </a>
+                    </li>
+                    @if (Request.IsAuthenticated)
+                    {
+                        <li>
+                            <a href="@Url.Action("Index", "Admin")">
+                                <span class="glyphicon glyphicon-cog"></span>
+                                Administration
+                            </a>
+                        </li>
+                    }
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="@Url.Action("About", "Home")">
+                            <span class="glyphicon glyphicon-info-sign"></span>
+                            @Resource.About
+                        </a>
+                    </li>
+                    @if (Request.IsAuthenticated)
+                    {
+                        <li>
+                                    <a href="@Url.Action("Manage", "Account")" title="Manage">
+                                        <span class="glyphicon glyphicon-user"></span>
+                                        @Resource.Hello  @User.Identity.GetUserName() !
+                                    </a>
+                                </li>
+                        <li>
+                                    <a href="javascript:document.getElementById('logoutForm').submit()">
+                                        <span class="glyphicon glyphicon-log-out"></span>
+                                        @Resource.LogOff
+                                    </a>
+                                </li>
+                        using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                        {
+                            @Html.AntiForgeryToken()
+                        
+                                
+                                
+                        }
+                    }
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+        @RenderBody()
+        <hr />
+
+        <footer>
+            <p>&copy; @DateTime.Now.Year</p>
+            <p>
+                @Resource.Developed @Resource.By Sharif Qasrawi (Beta)
+            </p>
+        </footer>
+
+        <a href="#" class="backToTop" title=""></a>
+    </div>
+
+
+    @RenderSection("scripts", required: false)
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/bs.Modal.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery2-ui-1.12.1.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/toastr.min.js"></script>
+    <script src="~/Scripts/Site.js"></script>
+
+    @if (Session["success"] != null)
+    {
+        <script>
+            toastr.success('@Session["success"].ToString()');
+            @(Session["success"] = null);
+        </script>
+    }
+</body>
+
+</html>

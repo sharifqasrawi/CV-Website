@@ -1,0 +1,72 @@
+﻿@model My_Personal_Website.Models.CVTrainingModel
+@using My_Personal_Website.Resources
+@{
+    ViewBag.Title = Resource.AddTr;
+}
+
+<h2>
+    <span class="glyphicon glyphicon-plus-sign"></span>
+    @Resource.AddTr</h2>
+<hr />
+
+@using (Html.BeginForm("AddTr", "Admin", FormMethod.Post, new { @class = "form-horizontal" })) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div >
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CourseName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.CourseName, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.CourseName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CourseName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.CourseName_Fr, new { @class = "form-control", placeholder = Resource.French })
+                @Html.ValidationMessageFor(model => model.CourseName_Fr)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CourceDate, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.CourceDate, new { @class = "form-control", placeholder = Resource.Date })
+                @Html.ValidationMessageFor(model => model.CourceDate)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Source, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Source, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.Source)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Source, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Source_Fr, new { @class = "form-control", placeholder = Resource.French })
+                @Html.ValidationMessageFor(model => model.Source_Fr)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-success">
+                    <span class="glyphicon glyphicon-saved"></span>
+                    @Resource.Add
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink(Resource.BackToList, "Trainings")
+</div>

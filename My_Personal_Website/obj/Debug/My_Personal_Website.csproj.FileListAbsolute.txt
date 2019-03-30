@@ -1,0 +1,293 @@
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\My_Personal_Website.dll.config
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\My_Personal_Website.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\My_Personal_Website.pdb
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Antlr3.Runtime.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\EntityFramework.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\EntityFramework.SqlServer.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.Core.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Cookies.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Facebook.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Google.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.OAuth.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Twitter.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Web.Infrastructure.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Newtonsoft.Json.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Owin.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\System.Web.Helpers.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\System.Web.Mvc.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\System.Web.Optimization.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\System.Web.Razor.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.Deployment.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.Razor.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\WebGrease.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\System.Web.Helpers.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\System.Web.Mvc.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\System.Web.Optimization.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\System.Web.Razor.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.Deployment.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.Razor.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Newtonsoft.Json.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Antlr3.Runtime.pdb
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\EntityFramework.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\EntityFramework.SqlServer.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.Core.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Facebook.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Cookies.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.OAuth.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Google.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Twitter.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.csprojResolveAssemblyReference.cache
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.pdb
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.InitialCreate.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.csproj.GenerateResource.Cache
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m1.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m2.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m11.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m12.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m13.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m14.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m15.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m16.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m17.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m18.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m19.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m110.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m111.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m112.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m113.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m114.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m115.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\bin\fr\My_Personal_Website.resources.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Resources.Resource.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Resources.Resource.fr.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\fr\My_Personal_Website.resources.dll
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m116.resources
+G:\My Programming\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m117.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\My_Personal_Website.dll.config
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\My_Personal_Website.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\My_Personal_Website.pdb
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\fr\My_Personal_Website.resources.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Antlr3.Runtime.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\EntityFramework.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\EntityFramework.SqlServer.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Newtonsoft.Json.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Owin.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\System.Web.Helpers.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\System.Web.Mvc.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\System.Web.Optimization.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\System.Web.Razor.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.Deployment.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.Razor.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\WebGrease.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\System.Web.Helpers.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\System.Web.Mvc.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\System.Web.Optimization.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\System.Web.Razor.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.Deployment.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.Razor.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Newtonsoft.Json.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Antlr3.Runtime.pdb
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\EntityFramework.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\EntityFramework.SqlServer.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m116.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m117.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.InitialCreate.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m1.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m2.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m11.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m12.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m13.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m14.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m15.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m16.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m17.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m18.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m19.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m110.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m111.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m112.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m113.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m114.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m115.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Resources.Resource.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Resources.Resource.fr.resources
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.csproj.GenerateResource.Cache
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\fr\My_Personal_Website.resources.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.dll
+C:\Users\SharifQ\Desktop\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.pdb
+G:\My_Personal_Website\My_Personal_Website\bin\My_Personal_Website.dll.config
+G:\My_Personal_Website\My_Personal_Website\bin\My_Personal_Website.dll
+G:\My_Personal_Website\My_Personal_Website\bin\My_Personal_Website.pdb
+G:\My_Personal_Website\My_Personal_Website\bin\fr\My_Personal_Website.resources.dll
+G:\My_Personal_Website\My_Personal_Website\bin\Antlr3.Runtime.dll
+G:\My_Personal_Website\My_Personal_Website\bin\EntityFramework.dll
+G:\My_Personal_Website\My_Personal_Website\bin\EntityFramework.SqlServer.dll
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.Core.dll
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.dll
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Cookies.dll
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.dll
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Facebook.dll
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Google.dll
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.OAuth.dll
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Twitter.dll
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Web.Infrastructure.dll
+G:\My_Personal_Website\My_Personal_Website\bin\Newtonsoft.Json.dll
+G:\My_Personal_Website\My_Personal_Website\bin\Owin.dll
+G:\My_Personal_Website\My_Personal_Website\bin\System.Web.Helpers.dll
+G:\My_Personal_Website\My_Personal_Website\bin\System.Web.Mvc.dll
+G:\My_Personal_Website\My_Personal_Website\bin\System.Web.Optimization.dll
+G:\My_Personal_Website\My_Personal_Website\bin\System.Web.Razor.dll
+G:\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.Deployment.dll
+G:\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.dll
+G:\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.Razor.dll
+G:\My_Personal_Website\My_Personal_Website\bin\WebGrease.dll
+G:\My_Personal_Website\My_Personal_Website\bin\System.Web.Helpers.xml
+G:\My_Personal_Website\My_Personal_Website\bin\System.Web.Mvc.xml
+G:\My_Personal_Website\My_Personal_Website\bin\System.Web.Optimization.xml
+G:\My_Personal_Website\My_Personal_Website\bin\System.Web.Razor.xml
+G:\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.xml
+G:\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.Deployment.xml
+G:\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.Razor.xml
+G:\My_Personal_Website\My_Personal_Website\bin\Newtonsoft.Json.xml
+G:\My_Personal_Website\My_Personal_Website\bin\Antlr3.Runtime.pdb
+G:\My_Personal_Website\My_Personal_Website\bin\EntityFramework.xml
+G:\My_Personal_Website\My_Personal_Website\bin\EntityFramework.SqlServer.xml
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.Core.xml
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.xml
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.xml
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Facebook.xml
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Cookies.xml
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.OAuth.xml
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Google.xml
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Twitter.xml
+G:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.csprojResolveAssemblyReference.cache
+G:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.InitialCreate.resources
+G:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Resources.Resource.resources
+G:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Resources.Resource.fr.resources
+G:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.csproj.GenerateResource.Cache
+G:\My_Personal_Website\My_Personal_Website\obj\Debug\fr\My_Personal_Website.resources.dll
+G:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.dll
+G:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.pdb
+G:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m1.resources
+G:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m11.resources
+G:\My_Personal_Website\My_Personal_Website\bin\PagedList.dll
+G:\My_Personal_Website\My_Personal_Website\bin\PagedList.Mvc.dll
+G:\My_Personal_Website\My_Personal_Website\bin\PagedList.xml
+G:\My_Personal_Website\My_Personal_Website\bin\PagedList.Mvc.xml
+E:\My_Personal_Website\My_Personal_Website\bin\My_Personal_Website.dll.config
+E:\My_Personal_Website\My_Personal_Website\bin\My_Personal_Website.dll
+E:\My_Personal_Website\My_Personal_Website\bin\My_Personal_Website.pdb
+E:\My_Personal_Website\My_Personal_Website\bin\fr\My_Personal_Website.resources.dll
+E:\My_Personal_Website\My_Personal_Website\bin\Antlr3.Runtime.dll
+E:\My_Personal_Website\My_Personal_Website\bin\EntityFramework.dll
+E:\My_Personal_Website\My_Personal_Website\bin\EntityFramework.SqlServer.dll
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.Core.dll
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.dll
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Cookies.dll
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.dll
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Facebook.dll
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Google.dll
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.OAuth.dll
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Twitter.dll
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Web.Infrastructure.dll
+E:\My_Personal_Website\My_Personal_Website\bin\Newtonsoft.Json.dll
+E:\My_Personal_Website\My_Personal_Website\bin\Owin.dll
+E:\My_Personal_Website\My_Personal_Website\bin\PagedList.dll
+E:\My_Personal_Website\My_Personal_Website\bin\PagedList.Mvc.dll
+E:\My_Personal_Website\My_Personal_Website\bin\System.Web.Helpers.dll
+E:\My_Personal_Website\My_Personal_Website\bin\System.Web.Mvc.dll
+E:\My_Personal_Website\My_Personal_Website\bin\System.Web.Optimization.dll
+E:\My_Personal_Website\My_Personal_Website\bin\System.Web.Razor.dll
+E:\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.Deployment.dll
+E:\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.dll
+E:\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.Razor.dll
+E:\My_Personal_Website\My_Personal_Website\bin\WebGrease.dll
+E:\My_Personal_Website\My_Personal_Website\bin\PagedList.xml
+E:\My_Personal_Website\My_Personal_Website\bin\PagedList.Mvc.xml
+E:\My_Personal_Website\My_Personal_Website\bin\System.Web.Helpers.xml
+E:\My_Personal_Website\My_Personal_Website\bin\System.Web.Mvc.xml
+E:\My_Personal_Website\My_Personal_Website\bin\System.Web.Optimization.xml
+E:\My_Personal_Website\My_Personal_Website\bin\System.Web.Razor.xml
+E:\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.xml
+E:\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.Deployment.xml
+E:\My_Personal_Website\My_Personal_Website\bin\System.Web.WebPages.Razor.xml
+E:\My_Personal_Website\My_Personal_Website\bin\Newtonsoft.Json.xml
+E:\My_Personal_Website\My_Personal_Website\bin\Antlr3.Runtime.pdb
+E:\My_Personal_Website\My_Personal_Website\bin\EntityFramework.xml
+E:\My_Personal_Website\My_Personal_Website\bin\EntityFramework.SqlServer.xml
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.Core.xml
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.xml
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.xml
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Facebook.xml
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Cookies.xml
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.OAuth.xml
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Google.xml
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.Twitter.xml
+E:\My_Personal_Website\My_Personal_Website\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.csprojResolveAssemblyReference.cache
+E:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m1.resources
+E:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.m11.resources
+E:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Migrations.InitialCreate.resources
+E:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Resources.Resource.resources
+E:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.Resources.Resource.fr.resources
+E:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.csproj.GenerateResource.Cache
+E:\My_Personal_Website\My_Personal_Website\obj\Debug\fr\My_Personal_Website.resources.dll
+E:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.dll
+E:\My_Personal_Website\My_Personal_Website\obj\Debug\My_Personal_Website.pdb

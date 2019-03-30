@@ -1,0 +1,45 @@
+﻿@model My_Personal_Website.Models.SocialModel
+@using My_Personal_Website.Resources
+@{
+    ViewBag.Title = Resource.SocialMedia;
+}
+
+<h2>
+    <span class="glyphicon glyphicon-comment"></span>
+    @Resource.SocialMedia</h2>
+<hr />
+@using (Html.BeginForm("SocialLinks", "Admin", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div >
+
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Facebook, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Facebook, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Facebook)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LinkedIn, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.LinkedIn, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.LinkedIn)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-success">
+                    <span class="glyphicon glyphicon-save"></span>
+                    @Resource.Save
+                </button>
+            </div>
+        </div>
+    </div>
+}
+

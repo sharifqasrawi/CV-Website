@@ -1,0 +1,82 @@
+﻿@model My_Personal_Website.Models.EduProject
+@using My_Personal_Website.Resources
+@{
+    ViewBag.Title = Resource.EditProject;
+}
+
+<h2>
+    <span class="glyphicon glyphicon-edit"></span>
+    @Resource.EditProject
+</h2>
+<hr />
+
+@using (Html.BeginForm("EditProject", "Admin", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="">
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProjectName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.ProjectName, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.ProjectName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProjectName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.ProjectName_Fr, new { @class = "form-control", placeholder = Resource.French })
+                @Html.ValidationMessageFor(model => model.ProjectName_Fr)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProjectDesc, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.ProjectDesc, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.ProjectDesc)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProjectDesc, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.ProjectDesc_Fr, new { @class = "form-control", placeholder = Resource.French })
+                @Html.ValidationMessageFor(model => model.ProjectDesc_Fr)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProjectLink, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.ProjectLink, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.ProjectLink)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Score, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Score, new { @class = "form-control", placeholder = Resource.Digit })
+                @Html.ValidationMessageFor(model => model.Score)
+            </div>
+        </div>
+        <input type="hidden" id="EduId" name="EduId" value="@Model.Edu.Id" />
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-success">
+                    <span class="glyphicon glyphicon-save"></span>
+                    @Resource.Save
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink(Resource.BackToList, "Education")
+</div>

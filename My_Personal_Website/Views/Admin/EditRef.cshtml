@@ -1,0 +1,74 @@
+﻿@model My_Personal_Website.Models.ProfRefs
+@using My_Personal_Website.Resources
+@{
+    ViewBag.Title = Resource.EditRef;
+}
+
+<h2>
+    <span class="glyphicon glyphicon-edit"></span>
+    @Resource.EditRef
+</h2>
+<hr />
+
+@using (Html.BeginForm("EditRef", "Admin", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.RefName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.RefName, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.RefName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.RefPhone, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.RefPhone, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.RefPhone)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.RefEmail, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.RefEmail, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.RefEmail)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.RefRelation, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.RefRelation, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.RefRelation)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.RefRelation, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.RefRelation_Fr, new { @class = "form-control", placeholder = Resource.French })
+                @Html.ValidationMessageFor(model => model.RefRelation_Fr)
+            </div>
+        </div>
+        <input type="hidden" id="ExpId" name="ExpId" value="@Request["ExpId"]" />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-success">
+                    <span class="glyphicon glyphicon-save"></span>
+                    @Resource.Save
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink(Resource.BackToList, "Experiences")
+</div>

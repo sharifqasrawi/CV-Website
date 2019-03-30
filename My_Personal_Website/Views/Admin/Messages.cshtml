@@ -1,0 +1,93 @@
+﻿@model IEnumerable<My_Personal_Website.Models.MessageModel>
+@using My_Personal_Website.Resources
+@using My_Personal_Website.WebsiteLanguages
+@{
+    ViewBag.Title = Resource.Messages;
+    string clsName = "";
+}
+
+<h2>
+    <span class="glyphicon glyphicon-envelope"></span>
+    @Resource.Messages</h2>
+<hr />
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="table-responsive">
+            <table class="table customTable1">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(m => m.First().Email)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(m => m.First().Subject)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(m => m.First().Msg)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(m => m.First().DT)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(m => m.First().IsSeen)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var m in Model)
+                    {
+                        if (!m.IsSeen)
+                        {
+                            clsName = "MsgSeen";
+                        }
+                        else
+                        {
+                            clsName = "";
+                        }
+                        <tr class="@clsName">
+                            <td>
+                                @m.Email
+                            </td>
+                            <td>
+                                @m.Subject
+                            </td>
+                            <td>
+                               @if(m.Msg.Length> 5)
+                               {
+                                   <text>
+                                @m.Msg.Substring(0, 35) ...
+                                </text>
+                               }
+                               else
+                               {
+                                   @m.Msg
+                               }
+                            </td>
+                            <td>
+                                @m.DT.ToShortDateString() / @m.DT.ToShortTimeString()
+                            </td>
+                            <td>
+                                @if(m.IsSeen)
+                                {
+                                    <span class="glyphicon glyphicon-ok"></span>
+                                }
+                                else
+                                {
+                                     <span class="glyphicon glyphicon-remove"></span>
+                                }
+                            </td>
+                            <td>
+                                <a href="@Url.Action("ViewMsg", "Admin", new { id = m.Id })" class="btn btn-default">
+                                    @Resource.ViewMsg
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

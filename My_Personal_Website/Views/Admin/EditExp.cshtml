@@ -1,0 +1,149 @@
+﻿@model My_Personal_Website.Models.CVProfModel
+@using My_Personal_Website.Resources
+@{
+    ViewBag.Title = Resource.EditExp;
+}
+
+<h2>
+    <span class="glyphicon glyphicon-edit"></span>
+    @Resource.EditExp
+</h2>
+<hr />
+
+@using (Html.BeginForm("EditExp", "Admin", FormMethod.Post, new { @class = "form-horizontal", enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.ValidationSummary(true)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Position, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Position, new { @class = "form-control", placeholder = Resource.English })
+            @Html.ValidationMessageFor(model => model.Position)
+        </div>
+    </div>
+    
+    <div class="form-group">
+        @Html.LabelFor(model => model.Position, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Position_Fr, new { @class = "form-control", placeholder = Resource.French })
+            @Html.ValidationMessageFor(model => model.Position_Fr)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Company, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Company, new { @class = "form-control", placeholder = Resource.English })
+            @Html.ValidationMessageFor(model => model.Company)
+        </div>
+    </div>
+    
+     <div class="form-group">
+        @Html.LabelFor(model => model.Company, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Company_Fr, new { @class = "form-control", placeholder = Resource.Company })
+            @Html.ValidationMessageFor(model => model.Company_Fr)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CompanyWebsite, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.CompanyWebsite, new { @class = "form-control", placeholder = Resource.English })
+            @Html.ValidationMessageFor(model => model.CompanyWebsite)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.DateStart, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.DateStart, new { @class = "form-control", placeholder = Resource.Date })
+            @Html.ValidationMessageFor(model => model.DateStart)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.FinishDate, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.FinishDate, new { @class = "form-control", placeholder = Resource.Date })
+            @Html.ValidationMessageFor(model => model.FinishDate)
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Desc, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextAreaFor(model => model.Desc, new { @class = "form-control", placeholder = Resource.English })
+            @Html.ValidationMessageFor(model => model.Desc)
+        </div>
+    </div>
+    
+    <div class="form-group">
+        @Html.LabelFor(model => model.Desc, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextAreaFor(model => model.Desc_Fr, new { @class = "form-control", placeholder = Resource.French })
+            @Html.ValidationMessageFor(model => model.Desc_Fr)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Country, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Country, new { @class = "form-control", placeholder = Resource.English })
+            @Html.ValidationMessageFor(model => model.Country)
+        </div>
+    </div>
+    
+    <div class="form-group">
+        @Html.LabelFor(model => model.Country, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Country_Fr, new { @class = "form-control", placeholder = Resource.French })
+            @Html.ValidationMessageFor(model => model.Country_Fr)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.City, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.City, new { @class = "form-control", placeholder = Resource.English })
+            @Html.ValidationMessageFor(model => model.City)
+        </div>
+    </div>
+    
+    <div class="form-group">
+        @Html.LabelFor(model => model.City, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.City_Fr, new { @class = "form-control", placeholder = Resource.French })
+            @Html.ValidationMessageFor(model => model.City_Fr)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ImgPath, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input type="file" id="uploadFile" name="uploadFile" class="hidden" />
+            <input type="button" id="btnUploadProductImage" value="@Resource.UploadFile" class="btn btn-primary"
+                   onclick="document.getElementById('uploadFile').click()" />
+            <div id="ImageHolder">
+            </div>
+            @Html.ValidationMessageFor(model => model.ImgPath)
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-success">
+                <span class="glyphicon glyphicon-save"></span>
+                @Resource.Save
+            </button>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink(Resource.BackToList, "Experiences")
+</div>

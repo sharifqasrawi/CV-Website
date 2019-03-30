@@ -1,0 +1,106 @@
+﻿@model My_Personal_Website.Models.ContactModel
+@using My_Personal_Website.Resources
+
+@{
+    ViewBag.Title = Resource.Contact;
+}
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <h4>
+            <span class="glyphicon glyphicon-envelope">
+            </span>
+            @Resource.OnlineMsg:
+        </h4>
+        <br />
+        @using (Html.BeginForm("Contact", "Home", FormMethod.Post, new { @class = "form-horizontal" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Message.Email,new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Message.Email, new { @class = "form-control", placeholder = Resource.Email })
+                    @Html.ValidationMessageFor(m => m.Message.Email)
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Message.Subject, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Message.Subject, new { @class = "form-control", placeholder = Resource.Subject })
+                    @Html.ValidationMessageFor(m => m.Message.Subject)
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Message.Msg, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextAreaFor(m => m.Message.Msg, new { @class = "form-control messageTextArea", placeholder = Resource.Text })
+                     @Html.ValidationMessageFor(m => m.Message.Msg)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <button type="submit" class="btn btn-default">
+                        @Resource.Send
+                        <span class="glyphicon glyphicon-send"></span>
+                    </button>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<hr />
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-info">
+            <div class="panel-heading text-center">
+                <h4 class="text-info">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    @Resource.Address
+                </h4>
+            </div>
+            <div class="panel-body text-center">
+                <h4>
+                    @Model.Address.Name
+                    <br />
+                    @Model.Address.City, @Model.Address.Country @Model.Address.CodePostal
+                    <br />
+                    @Model.Address.StreetNo Rue @Model.Address.StreetName
+                    <br />
+                    @Model.Address.AdditionalInfo
+                </h4>
+                <hr />
+                <div  class="table-responsive">
+                    <iframe src="@Url.Content(Model.Address.MapCord)"
+                            style="border: 0" frameborder="0"  allowfullscreen
+                            width="500" height="350">
+                            </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="panel panel-info">
+            <div class="panel-heading text-center">
+                <h4 class="text-info">
+                    <span class="glyphicon glyphicon-comment"></span>
+                   @Resource.SocialMedia
+                </h4>
+            </div>
+            <div class="panel-body text-center">
+                <a href="@Model.Social.Facebook" target="_blank">
+                    <img src="~/Images/fb.png" width="79" />
+                </a>
+
+                <a href="@Model.Social.LinkedIn" target="_blank">
+                    <img src="~/Images/lin.png" width="79" />
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>

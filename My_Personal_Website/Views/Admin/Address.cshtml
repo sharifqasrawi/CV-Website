@@ -1,0 +1,119 @@
+﻿@model My_Personal_Website.Models.AddressModel
+@using My_Personal_Website.Resources
+@{
+    ViewBag.Title = Resource.Address;
+}
+
+<h2>
+    <span class="glyphicon glyphicon-envelope"></span>
+    @Resource.Address</h2>
+<hr />
+@using (Html.BeginForm("Address", "Admin", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div >
+       
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Name, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.City, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.City, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.City)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.City, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.City_Fr, new { @class = "form-control", placeholder = Resource.French })
+                @Html.ValidationMessageFor(model => model.City_Fr)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Country, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Country, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.Country)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Country, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Country_Fr, new { @class = "form-control", placeholder = Resource.French })
+                @Html.ValidationMessageFor(model => model.Country_Fr)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CodePostal, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.CodePostal, new { @class = "form-control", placeholder = Resource.Digit })
+                @Html.ValidationMessageFor(model => model.CodePostal)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.StreetNo, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.StreetNo, new { @class = "form-control", placeholder = Resource.Digit })
+                @Html.ValidationMessageFor(model => model.StreetNo)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.StreetName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.StreetName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.StreetName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.AdditionalInfo, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.AdditionalInfo, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.AdditionalInfo)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.AdditionalInfo, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.AdditionalInfo_Fr, new { @class = "form-control", placeholder = Resource.French })
+                @Html.ValidationMessageFor(model => model.AdditionalInfo_Fr)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MapCord, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.MapCord, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MapCord)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="col-md-offset-2 col-md-10">
+                    <button type="submit" class="btn btn-success">
+                        <span class="glyphicon glyphicon-save"></span>
+                        @Resource.Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+

@@ -1,0 +1,233 @@
+﻿@model IEnumerable<My_Personal_Website.Models.CVProfModel>
+@using My_Personal_Website.Resources
+@using My_Personal_Website.WebsiteLanguages
+@{
+    ViewBag.Title = Resource.ExpPro;
+}
+
+@using My_Personal_Website.Models
+
+@{
+    int profCnt = 0;
+    int refCnt = 0;
+    List<string> panels = new List<string>();
+    panels.Add("panel-primary");
+    panels.Add("panel-info");
+    panels.Add("panel-default");
+    panels.Add("panel-warning");
+    panels.Add("panel-danger");
+
+}
+
+<div class="ContentStyle">
+    <a href="@Url.Action("AddExp", "Admin")" class="btn btn-success btn-block btn-lg">
+        <span class="glyphicon glyphicon-plus-sign"></span>&nbsp;@Resource.Add
+    </a>
+    <br />
+
+    @foreach (CVProfModel e in Model)
+    {
+
+        profCnt++;
+
+        <div class="panel @panels[profCnt - 1].ToString()">
+            <div class="panel-heading" style="font-weight:bold;">
+                @profCnt- @e.Position
+                &nbsp;
+                <a href="@Url.Action("EditExp", "Admin", new { id = e.Id })" class="btn btn-info ">
+                    <span class="glyphicon glyphicon-edit"></span>&nbsp;@Resource.Edit
+                </a>
+                &nbsp;&nbsp;
+                <a href="@Url.Action("DeleteExp", "Admin", new { id = e.Id })" class="btn btn-danger" onclick="return confirm('@Resource.ConfirmDelete')">
+                    <span class="glyphicon glyphicon-remove-sign"></span>&nbsp;@Resource.Delete
+                </a>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <dl>
+                            <dt>
+                                @Resource.Company:
+                            </dt>
+                            <dd>
+                                @switch (SiteLanguages.GetCurrentLanguageCulture())
+                                {
+                                    case "en-US":
+                                        @:@e.Company
+                        break;
+                                    case "fr-FR":
+                                    @:@e.Company_Fr
+                        break;
+                                    default:
+                                    @:@e.Company
+                        break;
+                                }
+                            </dd>
+                            <dd>
+                                <a href="@e.CompanyWebsite" target="_blank"> @e.CompanyWebsite </a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-lg-2">
+                        <dl>
+                            <dt>
+                                @Resource.JobDesc:
+                            </dt>
+                            <dd>
+                                @switch (SiteLanguages.GetCurrentLanguageCulture())
+                                {
+                                    case "en-US":
+                                        @:@e.Desc
+                        break;
+                                    case "fr-FR":
+                                    @:@e.Desc_Fr
+                        break;
+                                    default:
+                                    @:@e.Desc
+                        break;
+                                }
+                            </dd>
+
+                        </dl>
+                    </div>
+                    <div class="col-lg-2">
+                        <dl>
+                            <dt>
+                                @Resource.Country:
+                            </dt>
+                            <dd>
+                                @switch (SiteLanguages.GetCurrentLanguageCulture())
+                                {
+                                    case "en-US":
+                                        @:@e.Country
+                        break;
+                                    case "fr-FR":
+                                    @:@e.Country_Fr
+                        break;
+                                    default:
+                                    @:@e.Country
+                        break;
+                                }
+                            </dd>
+                            <dt>
+                                @Resource.City:
+                            </dt>
+                            <dd>
+                               @switch (SiteLanguages.GetCurrentLanguageCulture())
+{
+    case "en-US":
+        @:@e.City
+                        break;
+    case "fr-FR":
+    @:@e.City_Fr
+                        break;
+    default:
+    @:@e.City
+                        break;
+}
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-lg-2">
+                        <dl>
+                            <dt>
+                                @Resource.StartDate:
+                            </dt>
+                            <dd>
+                                @e.DateStart.ToShortDateString()
+                            </dd>
+                            <dt>
+                                @Resource.FinishDate:
+                            </dt>
+                            <dd>
+                                @e.FinishDate.ToShortDateString()
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-lg-2">
+                        <dl>
+                            <dt>
+                                @Resource.References:
+                                <a href="@Url.Action("AddRef", "Admin", new { ExpId = e.Id })" class="btn btn-success btn-sm">
+                                    <span class="glyphicon glyphicon-plus-sign"></span>&nbsp;@Resource.Add
+                                </a>
+                            </dt>
+                            <dd>
+                                <dl>
+                                    @if (e.Refs.Count > 0)
+                                    {
+                                        foreach (ProfRefs r in e.Refs)
+                                        {
+                                            refCnt++;
+                                            <dt>
+                                                @refCnt- @Resource.Name:
+                                            </dt>
+                                            <dd>
+                                                @r.RefName
+                                            </dd>
+                                            <dt>
+                                                @Resource.Relation:
+                                            </dt>
+                                            <dd>
+                                                @switch (SiteLanguages.GetCurrentLanguageCulture())
+                                                {
+                                                    case "en-US":
+                                                        @:@r.RefRelation
+                        break;
+                                                    case "fr-FR":
+                                                    @:@r.RefRelation_Fr
+                        break;
+                                                    default:
+                                                    @:@r.RefRelation
+                        break;
+                                                }
+                                            </dd>
+                                            <dt>
+                                                @Resource.Email:
+                                            </dt>
+                                            <dd>
+                                                <a href="mailto: @r.RefEmail"> @r.RefEmail</a>
+                                            </dd>
+                                            <dt>
+                                                @Resource.PhoneNum:
+                                            </dt>
+                                            <dd>
+                                                @r.RefPhone
+                                            </dd>
+                                            <dt>
+                                                @Resource.Options:
+                                            </dt>
+                                            <dd>
+                                                <br />
+                                                <a href="@Url.Action("EditRef", "Admin", new { id = r.Id })" class="btn btn-info ">
+                                                    <span class="glyphicon glyphicon-edit"></span>&nbsp;@Resource.Edit
+                                                </a>
+
+                                                <a href="@Url.Action("DeleteRef", "Admin", new { id = r.Id })" class="btn btn-danger" onclick="return confirm('@Resource.ConfirmDelete ? ');">
+                                                    <span class="glyphicon glyphicon-remove-sign"></span>&nbsp;@Resource.Delete
+                                                </a>
+                                                <br />
+
+                                            </dd>
+                                            <hr />
+                                        }
+                                    }
+                                </dl>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-lg-1">
+
+                        <br />
+                        <a href="@Url.Content(e.ImgPath)" target="_blank"
+                           class="btn btn-sm btn-default">
+                            @Resource.ShowCertificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    }
+</div>

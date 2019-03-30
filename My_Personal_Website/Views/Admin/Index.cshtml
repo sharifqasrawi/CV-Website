@@ -1,0 +1,77 @@
+﻿@using My_Personal_Website.Resources
+@{
+    ViewBag.Title = "Admin";
+}
+
+@using My_Personal_Website.Resources
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h2 class="panel-title text-center">
+                    <span class="glyphicon glyphicon-cog"></span> @Resource.AdminOptions
+                </h2>
+            </div>
+            <div class="adminPanel">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <a href="@Url.Action("Personal","Admin")" class="btn btn-success btn-lg btn-block" role="button">
+                                <span class="fas fa-user"></span>
+                                <br />
+                                Personal
+                            </a>
+                            <br />
+                            <a href="@Url.Action("Education","Admin")" class="btn btn-success btn-lg" role="button">
+                                <span class="fas fa-user-graduate"></span>
+                                <br />
+                                @Resource.Education
+                            </a>
+                            <a href="@Url.Action("Experiences", "Admin")" class="btn btn-primary btn-lg" role="button">
+                                <span class="fas fa-briefcase"></span>
+                                <br />
+                                @Resource.ExpPro
+                            </a>
+                            <a href="@Url.Action("Trainings", "Admin")" class="btn btn-info btn-lg" role="button">
+                                <span class="fas fa-school"></span>
+                                <br />
+                                @Resource.TrainingCourses
+                            </a>
+
+                            <a href="@Url.Action("Skills","Admin")" class="btn btn-warning btn-lg" role="button">
+                                <span class="fas fa-swimmer"></span>
+                                <br />
+                                @Resource.Skills
+                            </a>
+
+                            <a href="@Url.Action("Languages", "Admin")" class="btn btn-warning btn-lg" role="button">
+                                <span class="fas fa-language"></span>
+                                <br />
+                                @Resource.Languages
+                            </a>
+
+                            <a href="@Url.Action("Address", "Admin")" class="btn btn-info btn-lg" role="button">
+                                <span class="fas fa-address-card"></span>
+                                <br />
+                                @Resource.Address
+                            </a>
+                            <a href="@Url.Action("SocialLinks", "Admin")" class="btn btn-primary btn-lg" role="button">
+                                <span class="fas fa-comments"></span>
+                                <br />
+                                @Resource.SocialMedia
+                            </a>
+
+                            <a href="@Url.Action("Messages", "Admin")" class="btn btn-success btn-lg" role="button">
+                                <span class="fas fa-comments"></span>
+                                <br />
+                                @Resource.Messages
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

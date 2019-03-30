@@ -1,0 +1,138 @@
+﻿@model IEnumerable<My_Personal_Website.Models.CVSkillsModel>
+    @using My_Personal_Website.Models
+@using My_Personal_Website.WebsiteLanguages
+@using My_Personal_Website.Resources
+    @{
+        int sklCnt = 0;
+        string clsName = "";
+        string lblColor = "";
+        List<string> panels = new List<string>();
+        panels.Add("panel-primary");
+        panels.Add("panel-info");
+        panels.Add("panel-default");
+        panels.Add("panel-warning");
+        panels.Add("panel-danger");
+
+    }
+
+
+    <div id="skl" class="ContentStyle">
+        <a href="@Url.Action("AddSkill","Admin")" class="btn btn-success btn-block btn-lg">
+            <span class="glyphicon glyphicon-plus-sign"></span>&nbsp;@Resource.Add
+        </a>
+        <br />
+        @foreach (CVSkillsModel e in Model)
+        {
+
+            sklCnt++;
+            clsName = e.SkillType;
+            <div class="panel panel-info @e.SkillType">
+                <div class="panel-heading" style="font-weight:bold;">
+                    @sklCnt-
+                    @switch (SiteLanguages.GetCurrentLanguageCulture())
+                    {
+                        case "en-US":
+                            @:@e.SkillName
+                        break;
+                        case "fr-FR":
+                        @:@e.SkillName_Fr
+                        break;
+                        default:
+                        @:@e.SkillName
+                        break;
+                    }
+                    &nbsp;
+                    <a href="@Url.Action("EditSkill", "Admin", new { id = e.Id })" class="btn btn-info ">
+                        <span class="glyphicon glyphicon-edit"></span>&nbsp;@Resource.Edit
+                    </a>
+                    &nbsp;&nbsp;
+                    <a href="@Url.Action("DeleteSkill", "Admin", new { id = e.Id })" class="btn btn-danger" onclick="return confirm('@Resource.ConfirmDelete')">
+                        <span class="glyphicon glyphicon-remove-sign"></span>&nbsp;@Resource.Delete
+                    </a>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <dl>
+                                <dt>
+                                    @Resource.Type:
+                                </dt>
+                                <dd>
+                                    @switch (SiteLanguages.GetCurrentLanguageCulture())
+                                    {
+                                        case "en-US":
+                                            @:@e.SkillType
+                        break;
+                                        case "fr-FR":
+                                        @:@e.SkillType_Fr
+                        break;
+                                        default:
+                                        @:@e.SkillType
+                        break;
+                                    }
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="col-lg-6">
+                            <dl>
+                                <dt>
+                                    @Resource.Description
+                                </dt>
+                                <dd>
+                                 @switch (SiteLanguages.GetCurrentLanguageCulture())
+{
+    case "en-US":
+        @:@e.Desc
+                        break;
+    case "fr-FR":
+    @:@e.Desc_Fr
+                        break;
+    default:
+    @:@e.Desc
+                        break;
+}
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="col-lg-3">
+                            <dl>
+                                <dt>
+                                    @Resource.Level:
+                                </dt>
+                                <dd>
+                                    @{
+            if (e.Level >= 80)
+            {
+                lblColor = "progress-bar-success";
+            }
+            else if (e.Level >= 50 && e.Level < 80)
+            {
+                lblColor = "progress-bar-info";
+            }
+            else if (e.Level >= 20 && e.Level < 50)
+            {
+                lblColor = "progress-bar-warning";
+            }
+            else if (e.Level >= 0 && e.Level < 20)
+            {
+                lblColor = "progress-bar-danger";
+            }
+                                    }
+                                    <div class="progress">
+                                        <div class="progress-bar @lblColor progress-bar-striped active"  role="progressbar" aria-valuenow="@e.Level"
+                                             aria-valuemin="0" aria-valuemax="100" style="width:@e.Level%">
+                                            @e.Level %
+                                        </div>
+                                    </div>
+                                </dd>
+
+                            </dl>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        }
+    </div>

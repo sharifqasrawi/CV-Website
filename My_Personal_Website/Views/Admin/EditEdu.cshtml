@@ -1,0 +1,161 @@
+﻿@model My_Personal_Website.Models.CVEduModel
+@using My_Personal_Website.Resources
+@{
+    ViewBag.Title = Resource.EditEdu;
+}
+
+<h2>
+    <span class="glyphicon glyphicon-edit"></span>
+    @Resource.EditEdu
+</h2>
+<hr />
+@using (Html.BeginForm("EditEdu", "Admin", FormMethod.Post, new { @class = "form-horizontal", enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="">
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Degree, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Degree, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.Degree)
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Degree, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Degree_Fr, new { @class = "form-control", placeholder = Resource.French })
+                @Html.ValidationMessageFor(model => model.Degree_Fr)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Major, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Major, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.Major)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Major, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Major_Fr, new { @class = "form-control", placeholder = Resource.French })
+                @Html.ValidationMessageFor(model => model.Major_Fr)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.University, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.University, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.University)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.University, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.University_Fr, new { @class = "form-control", placeholder = Resource.French })
+                @Html.ValidationMessageFor(model => model.University_Fr)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.UniversityWebsite, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.UniversityWebsite, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.UniversityWebsite)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Country, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Country, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.Country)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Country, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Country_Fr, new { @class = "form-control", placeholder = Resource.French })
+                @Html.ValidationMessageFor(model => model.Country_Fr)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.City, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.City, new { @class = "form-control", placeholder = Resource.English })
+                @Html.ValidationMessageFor(model => model.City)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.City, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.City_Fr, new { @class = "form-control", placeholder = Resource.French })
+                @Html.ValidationMessageFor(model => model.City_Fr)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DateStart, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.DateStart, new { @class = "form-control", placeholder = Resource.Date })
+                @Html.ValidationMessageFor(model => model.DateStart)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DateFinish, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.DateFinish, new { @class = "form-control", placeholder = Resource.Date })
+                @Html.ValidationMessageFor(model => model.DateFinish)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Score, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Score, new { @class = "form-control", placeholder = Resource.Digit })
+                @Html.ValidationMessageFor(model => model.Score)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ImgPath, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="img-responsive">
+                    <img src="@Url.Content(Model.ImgPath)" class="img-thumbnail img-responsive thumb-image" />
+                </div>
+                
+                <input type="file" id="uploadFile" name="uploadFile" class="hidden" />
+                <input type="button" id="btnUploadProductImage" value="@Resource.UploadFile" class="btn btn-primary"
+                       onclick="document.getElementById('uploadFile').click()" />
+                <div id="ImageHolder">
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-success">
+                    <span class="glyphicon glyphicon-save"></span>
+                    @Resource.Save
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink(Resource.BackToList, "Education")
+</div>

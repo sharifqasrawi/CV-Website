@@ -1,0 +1,95 @@
+﻿@using My_Personal_Website.Resources
+@using My_Personal_Website.WebsiteLanguages
+@{
+    ViewBag.Title = Resource.TrainingCourses ;
+}
+
+
+
+@model IEnumerable<My_Personal_Website.Models.CVTrainingModel>
+@using My_Personal_Website.Models
+
+@{
+    int crsCnt = 0;
+
+}
+
+<div class="ContentStyle">
+
+    <a href="@Url.Action("AddTr","Admin")" class="btn btn-success btn-block btn-lg">
+        <span class="glyphicon glyphicon-plus-sign"></span>&nbsp;@Resource.Add
+    </a>
+    <br />
+    @foreach (CVTrainingModel e in Model)
+    {
+
+        crsCnt++;
+
+        <div class="panel panel-info">
+            <div class="panel-heading" style="font-weight:bold;">
+                @crsCnt- @switch (SiteLanguages.GetCurrentLanguageCulture())
+{
+    case "en-US":
+        @:@e.CourseName
+                        break;
+    case "fr-FR":
+    @:@e.CourseName_Fr
+                        break;
+    default:
+    @:@e.CourseName
+                        break;
+}
+                &nbsp;
+                <a href="@Url.Action("EditTr", "Admin", new { id = e.Id })" class="btn btn-info ">
+                    <span class="glyphicon glyphicon-edit"></span>&nbsp;@Resource.Edit
+                </a>
+                &nbsp;&nbsp;
+                <a href="@Url.Action("DeleteTr", "Admin", new { id = e.Id })" class="btn btn-danger" onclick="return confirm('@Resource.ConfirmDelete')">
+                    <span class="glyphicon glyphicon-remove-sign"></span>&nbsp;@Resource.Delete
+                </a>
+
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <dl>
+                            <dt>
+                                @Resource.Source:
+                            </dt>
+                            <dd>
+                                @switch (SiteLanguages.GetCurrentLanguageCulture())
+                                {
+                                    case "en-US":
+                                        @:@e.Source
+                        break;
+                                    case "fr-FR":
+                                    @:@e.Source_Fr
+                        break;
+                                    default:
+                                    @:@e.Source
+                        break;
+                                }
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-lg-6">
+                        <dl>
+                            <dt>
+                                @Resource.Date:
+                            </dt>
+                            <dd>
+                                @e.CourceDate
+                            </dd>
+
+                        </dl>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    }
+</div>
+
+

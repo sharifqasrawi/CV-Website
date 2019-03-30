@@ -1,0 +1,240 @@
+﻿@model My_Personal_Website.Models.HomeModel
+@using My_Personal_Website.Models
+@using My_Personal_Website.Resources
+@using My_Personal_Website.WebsiteLanguages
+@{
+    int eduCnt = 0;
+    int profCnt = 0;
+    int refCnt = 0;
+    int langCnt = 0;
+    int crsCnt = 0;
+    int sklCnt = 0;
+    string spkColor = "", lstColor = "", rdColor = "", wrColor = "", lblColor = "";
+    string clsName = "";
+    List<string> panels = new List<string>();
+    panels.Add("panel-primary");
+    panels.Add("panel-info");
+    panels.Add("panel-default");
+    panels.Add("panel-warning");
+    panels.Add("panel-danger");
+
+}
+
+    <iframe id="iframe_edu" style="display:none;"></iframe>
+
+    <div class="ContentStyle">
+        @foreach (CVEduModel e in Model.Educations)
+        {
+
+            eduCnt++;
+
+            <div class="panel @panels[eduCnt-1].ToString()">
+                <div class="panel-heading" style="font-weight:bold;">
+                    @eduCnt-
+
+                    @switch (SiteLanguages.GetCurrentLanguageCulture())
+                    {
+                        case "en-US":
+                            @:@e.Degree
+                                break;
+                        case "fr-FR":
+                        @:@e.Degree_Fr
+                                break;
+                        default:
+                        @:@e.Degree
+                                break;
+                    }
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <dl>
+                                <dt>
+                                    @Resource.Major:
+                                </dt>
+                                <dd>
+                                    @switch (SiteLanguages.GetCurrentLanguageCulture())
+                                    {
+                                        case "en-US":
+                                            @:@e.Major
+                                break;
+                                        case "fr-FR":
+                                        @:@e.Major_Fr
+                                break;
+                                        default:
+                                        @:@e.Major
+                                break;
+                                    }
+
+                                </dd>
+
+                            </dl>
+                        </div>
+                        <div class="col-lg-4">
+                            <dl>
+                                <dt>
+                                    @Resource.University:
+                                </dt>
+                                <dd>
+                                    @switch (SiteLanguages.GetCurrentLanguageCulture())
+                                    {
+                                        case "en-US":
+                                            @:@e.University
+                                break;
+                                        case "fr-FR":
+                                        @:@e.University_Fr
+                                break;
+                                        default:
+                                        @:@e.University
+                                break;
+                                    }
+                                </dd>
+                                <dd>
+                                    <a href="@e.UniversityWebsite" target="_blank"> @e.UniversityWebsite </a>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="col-lg-4">
+                            <dl>
+                                <dt>
+                                    @Resource.Country:
+                                </dt>
+                                <dd>
+                                    @switch (SiteLanguages.GetCurrentLanguageCulture())
+                                    {
+                                        case "en-US":
+                                            @:@e.Country
+                                break;
+                                        case "fr-FR":
+                                        @:@e.Country_Fr
+                                break;
+                                        default:
+                                        @:@e.Country
+                                break;
+                                    }
+                                </dd>
+                                <dt>
+                                    @Resource.City:
+                                </dt>
+                                <dd>
+                                    @switch (SiteLanguages.GetCurrentLanguageCulture())
+                                    {
+                                        case "en-US":
+                                            @:@e.City
+                                break;
+                                        case "fr-FR":
+                                        @:@e.City_Fr
+                                break;
+                                        default:
+                                        @:@e.City
+                                break;
+                                    }
+                                </dd>
+                            </dl>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <dl>
+                                <dt>
+                                    @Resource.StartDate:
+                                </dt>
+                                <dd>
+                                    @e.DateStart
+                                </dd>
+                                <dt>
+                                    @Resource.FinishDate:
+                                </dt>
+                                <dd>
+                                    @e.DateFinish
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="col-lg-4">
+                            <dl>
+                                <dt>
+                                    @Resource.Score:
+                                </dt>
+                                <dd>
+                                    @e.Score %
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="col-lg-4">
+
+                            <br />
+                            <a href="@Url.Content(e.ImgPath)" target="_blank"
+                               class="btn btn-sm btn-default" download >
+                                @Resource.ShowDegree
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                            </a>
+                        </div>
+                    </div>
+                    @if (e.Projects.Count > 0)
+                    {
+                        <hr />
+                        <h4 style="font-weight:bold; text-decoration:underline">
+                            @Resource.Projects:
+                        </h4>
+                        foreach (EduProject p in e.Projects)
+                        {
+                            <dl>
+                                <dt>
+                                    @Resource.ProjectNAme:
+                                </dt>
+                                <dd>
+                                    @switch (SiteLanguages.GetCurrentLanguageCulture())
+                                    {
+                                        case "en-US":
+                                            @:@p.ProjectName
+                                break;
+                                        case "fr-FR":
+                                        @:@p.ProjectName_Fr
+                                break;
+                                        default:
+                                        @:@p.ProjectName
+                                break;
+                                    }
+                                </dd>
+                                <dt>
+                                    @Resource.Description:
+                                </dt>
+                                <dd>
+                                    @switch (SiteLanguages.GetCurrentLanguageCulture())
+                                    {
+                                        case "en-US":
+                                            @:@p.ProjectDesc
+                                break;
+                                        case "fr-FR":
+                                        @:@p.ProjectDesc_Fr
+                                break;
+                                        default:
+                                        @:@p.ProjectDesc
+                                break;
+                                    }
+                                </dd>
+                                <dt>
+                                    @Resource.Score:
+                                </dt>
+                                <dd>
+                                    @p.Score %
+                                </dd>
+                                <dt>
+                                    @Resource.ProjectLink:
+                                </dt>
+                                <dd>
+                                    <a href="@p.ProjectLink" target="_blank">
+                                        @p.ProjectLink
+                                    </a>
+                                </dd>
+                            </dl>
+                            <br />
+                        }
+                    }
+                </div>
+            </div>
+
+
+        }
+    </div>

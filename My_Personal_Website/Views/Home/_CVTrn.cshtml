@@ -1,0 +1,87 @@
+﻿@model My_Personal_Website.Models.HomeModel
+@using My_Personal_Website.Models
+@using My_Personal_Website.WebsiteLanguages
+@{
+    int eduCnt = 0;
+    int profCnt = 0;
+    int refCnt = 0;
+    int langCnt = 0;
+    int crsCnt = 0;
+    int sklCnt = 0;
+    string spkColor = "", lstColor = "", rdColor = "", wrColor = "", lblColor = "";
+    string clsName = "";
+    List<string> panels = new List<string>();
+    panels.Add("panel-primary");
+    panels.Add("panel-info");
+    panels.Add("panel-default");
+    panels.Add("panel-warning");
+    panels.Add("panel-danger");
+
+}
+
+<div class="ContentStyle">
+    @foreach (CVTrainingModel e in Model.Trainings)
+    {
+
+        crsCnt++;
+
+        <div class="panel panel-info">
+            <div class="panel-heading" style="font-weight:bold;">
+                @crsCnt-
+                @switch (SiteLanguages.GetCurrentLanguageCulture())
+                {
+                    case "en-US":
+                        @:@e.CourseName
+                        break;
+                    case "fr-FR":
+                    @:@e.CourseName_Fr
+                        break;
+                    default:
+                    @:@e.CourseName
+                        break;
+                }
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <dl>
+                            <dt>
+                                Source:
+                            </dt>
+                            <dd>
+                                @switch (SiteLanguages.GetCurrentLanguageCulture())
+                                {
+                                    case "en-US":
+                                        @:@e.Source
+                        break;
+                                    case "fr-FR":
+                                    @:@e.Source_Fr
+                        break;
+                                    default:
+                                    @:@e.Source
+                        break;
+                                }
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-lg-6">
+                        <dl>
+                            <dt>
+                                Date:
+                            </dt>
+                            <dd>
+                                @e.CourceDate
+                            </dd>
+
+                        </dl>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    }
+</div>
+
+

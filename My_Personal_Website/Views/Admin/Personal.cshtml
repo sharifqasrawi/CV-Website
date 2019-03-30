@@ -1,0 +1,93 @@
+﻿@model My_Personal_Website.Models.CVPersonalModel
+@using My_Personal_Website.Resources
+@using My_Personal_Website.WebsiteLanguages
+@{
+    ViewBag.Title = "Personal";
+}
+
+<h2>Personal</h2>
+<hr />
+@using (Html.BeginForm("Personal", "Admin", FormMethod.Post, new { @class = "form-horizontal", enctype = "multipart/form-data"  }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div >
+     
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Desc, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Desc, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Desc)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Desc_Fr, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Desc_Fr, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Desc_Fr)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.BirthDate, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.BirthDate, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.BirthDate)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Telephone, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Telephone, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Telephone)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Email)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ImagePath, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" id="uploadFile[0]" name="uploadFile[0]" class="btn btn-default" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CVPath, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="col-md-10">
+                    <input type="file" id="uploadFile2" name="uploadFile2" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-success">
+                    <span class="glyphicon glyphicon-save"></span>
+                    @Resource.Save
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
+
